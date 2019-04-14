@@ -1,0 +1,34 @@
+body{
+    margin-left: 3em;
+    background: burlywood;
+    font-family: 'Times New Roman', Times, serif;
+}
+h2{
+    font-weight: 700;
+    background-color: #000000;
+    color: burlywood;
+    text-align: center;
+    margin-left: -1.5em;
+}
+#searchbar{
+    border: 1px solid #e8eaf2;
+    width: 300px;
+    margin-top: 0.5em;
+}
+#searchbtn,#play,#pause{
+    border: none;
+    background-color: brown;
+    padding-left: 1em;
+    padding-right: 1em;
+    color: #ffffff;
+    border-radius: 5%;
+}
+#searchbtn,#pause{
+    margin-left: 1em;
+}
+#resultarea{
+    width: 400px;
+    font-weight: 600;
+    font-size: 13px;
+    color: brown;
+}

@@ -25,4 +25,9 @@ io.on('connection', (socket) => {
         io.sockets.emit('pause', data);
     });
 
+    // Handle videoid event
+    socket.on('videoid', function(data){
+        io.sockets.emit('videoid', data);
+    });
+
 });

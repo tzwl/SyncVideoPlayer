@@ -4,11 +4,23 @@
         <meta charset="utf-8">
         <title>Sync Video Player</title>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
-        <!-- <link href="/styles.css" rel="stylesheet" /> -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+        <link href="./style.css" rel="stylesheet" />
     </head>
     <body>
-        <center>
-        <h3>Sync Video Player</h3>
+        
+        <!-- <center> -->
+        <h2>Sync Video Player</h2>
+        
+        <div id ="searcharea">
+            <input type='text' placeholder="search..." id="searchbar"/>
+            <button id="searchbtn">Search</button>
+        </div>
+        <br/>
+        <div id ="resultarea" >  </div>
+        <br/>
         <div >
             <div id="video-placeholder"></div>
             <br/>
@@ -16,7 +28,7 @@
             <button id="play">Play</button>
             <button id="pause">Pause</button>            
         </div>
-        </center>
+        <!-- </center> -->
 
     </body>
     <script src="/video.js"></script>
