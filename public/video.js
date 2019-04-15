@@ -1,6 +1,6 @@
 // Make connection
 // var socket = io.connect('http://localhost:4000');
-var socket = io.connect('https://my-coolapp.herokuapp.com/');
+var socket = io.connect('https://syncvideoplayer.herokuapp.com/');
 
 
 var play = document.getElementById('play'),
