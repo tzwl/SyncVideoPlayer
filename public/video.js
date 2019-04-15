@@ -20,7 +20,7 @@ function initialize(){
 
 //search video
 searchbtn.addEventListener('click',function(){
-  console.log(searchbar.value); 
+//   console.log(searchbar.value); 
   
   var urlString = "https://www.googleapis.com/youtube/v3/search?part=snippet&q="+searchbar.value+"&type=video&key=AIzaSyBHO2dkGc8FEjKb7QRadas5xhF3AHnYX8A";
   
@@ -32,7 +32,7 @@ searchbtn.addEventListener('click',function(){
       resultarea.innerHTML = "";
 
       results.forEach((video) => {
-        console.log(video.snippet.title);
+//         console.log(video.snippet.title);
         resultarea.innerHTML += '<div id='+video.id.videoId+'><img src=\"'+video.snippet.thumbnails.default.url+'\" id='+video.id.videoId+'><span>'+
         video.snippet.title+'</span></div>'
         
@@ -49,7 +49,7 @@ searchbtn.addEventListener('click',function(){
 //select video
 var vid_id ='';
 resultarea.addEventListener('click',function(event){
-  console.log(event.target.id)
+//   console.log(event.target.id)
   socket.emit('videoid',event.target.id);
   resultarea.innerHTML = "";
 
@@ -121,7 +121,7 @@ pause.addEventListener('click',function(){
 });
 
 function statechange(event){
-  console.log(event.data)
+//   console.log(event.data)
   if(event.data == 1 && !flag){
     socket.emit('play',player.getCurrentTime());
     flag = true;
@@ -135,13 +135,13 @@ function statechange(event){
 
 // Listen for events
 socket.on('play', function(data){
-  console.log("play video");
+//   console.log("play video");
   player.playVideo();
   player.seekTo(data);
 });
 
 socket.on('pause', function(data){
-  console.log("pause video");
+//   console.log("pause video");
   player.pauseVideo();
 });
 
