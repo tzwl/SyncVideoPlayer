@@ -1,5 +1,7 @@
 // Make connection
-var socket = io.connect('http://localhost:4000');
+// var socket = io.connect('http://localhost:4000');
+var socket = io.connect('https://my-coolapp.herokuapp.com/');
+
 
 var play = document.getElementById('play'),
 pause = document.getElementById('pause'),
@@ -31,7 +33,8 @@ searchbtn.addEventListener('click',function(){
 
       results.forEach((video) => {
         console.log(video.snippet.title);
-        resultarea.innerHTML += '<div id='+video.id.videoId+'><img src=\"'+video.snippet.thumbnails.default.url+'\" id='+video.id.videoId+'><br/>'+video.snippet.title+'<br/><br/></div>'
+        resultarea.innerHTML += '<div id='+video.id.videoId+'><img src=\"'+video.snippet.thumbnails.default.url+'\" id='+video.id.videoId+'><span>'+
+        video.snippet.title+'</span></div>'
         
       });      
       

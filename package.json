@@ -1,15 +1,23 @@
 {
-  "name": "syncvideoplayer",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "start": "node app.js"
-  },
-  "author": "thinzar",
-  "license": "ISC",
-  "dependencies": {
+"name": "coolnodeapp",
+"version": "1.0.0",
+"description": "node app ",
+"main": "index.js",
+"scripts": {
+"start": "node index.js"
+},
+"repository": {
+"type": "git",
+"url": ""
+},
+"author": "",
+"license": "ISC",
+"dependencies": {
     "express": "^4.16.4",
     "socket.io": "^2.2.0"
-  }
+  },
+"bugs": {
+"url": ""
+},
+"homepage": ""
 }

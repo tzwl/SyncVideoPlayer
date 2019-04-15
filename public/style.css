@@ -1,19 +1,27 @@
-body{
-    margin-left: 3em;
+body{    
     background: burlywood;
     font-family: 'Times New Roman', Times, serif;
 }
+
 h2{
     font-weight: 700;
     background-color: #000000;
     color: burlywood;
     text-align: center;
-    margin-left: -1.5em;
+    padding-top: 7px;
+    padding-bottom: 12px;
+}
+#searcharea,#resultarea{
+    margin-left: 3em;
 }
 #searchbar{
-    border: 1px solid #e8eaf2;
-    width: 300px;
+    /* border: 1px solid #e8eaf2; */
+    background: transparent;
+    border: none;
+    border-bottom:1.3px solid #e8eaf2;
+    width: 400px;
     margin-top: 0.5em;
+    padding-left: 1em;
 }
 #searchbtn,#play,#pause{
     border: none;
@@ -26,9 +34,19 @@ h2{
 #searchbtn,#pause{
     margin-left: 1em;
 }
-#resultarea{
-    width: 400px;
+#resultarea div{
+    padding-bottom: 0.5em;
+}
+#resultarea span{
     font-weight: 600;
-    font-size: 13px;
+    font-size: 14px;
     color: brown;
+    margin-left: 0.5em;
+    
+}
+#resultarea span:hover,
+#searchbtn:hover,
+#play:hover,
+#pause:hover{
+    opacity: 0.8;    
 }
